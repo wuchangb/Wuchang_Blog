@@ -32,5 +32,5 @@ spring:
       enabled: always # vscode console color
 logging:
   level:
-    '[shop.changwoo.wuchangblog]': DEBUG
+    '[shop.wuchang.wuchangblog]': DEBUG
     '[org.hibernate.type]': TRACE

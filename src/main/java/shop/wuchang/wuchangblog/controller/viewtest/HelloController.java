@@ -1,4 +1,4 @@
-package shop.wuchang.wuchangblog.controller;
+package shop.wuchang.wuchangblog.controller.viewtest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

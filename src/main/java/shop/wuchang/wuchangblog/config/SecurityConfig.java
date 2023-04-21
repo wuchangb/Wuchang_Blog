@@ -21,7 +21,10 @@ public class SecurityConfig {
         //1. csrf 해제
         http.csrf().disable();
 
-        //2. Form 로그인 설정
+        //2. frame option 해제 (시큐리티 h2-console 접속 허용 위해)
+        http.headers().frameOptions().disable();
+
+        //3. Form 로그인 설정
         http.formLogin()
                 .loginPage("/loginForm")
                 .loginProcessingUrl("/login")

@@ -4,6 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import shop.wuchang.wuchangblog.model.user.User;
 import shop.wuchang.wuchangblog.model.user.UserRepository;
@@ -11,6 +12,7 @@ import shop.wuchang.wuchangblog.model.user.UserRepository;
 @SpringBootApplication
 public class WuchangblogApplication {
 
+    @Profile("dev")
     @Bean
     CommandLineRunner init(UserRepository userRepository, BCryptPasswordEncoder passwordEncoder){
         return args -> {

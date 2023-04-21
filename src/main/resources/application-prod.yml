@@ -17,7 +17,7 @@ spring:
     password: ${rds.password}
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: none  # DB직접 만들어야함
       default_batch_fetch_size: 100 # in query
     open-in-view: false
 logging:

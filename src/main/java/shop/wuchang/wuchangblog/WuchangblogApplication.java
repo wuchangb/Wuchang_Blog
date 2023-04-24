@@ -24,6 +24,8 @@ public class WuchangblogApplication extends DummyEntity{
         return args -> {
             User ssar = newUser("ssar", passwordEncoder);
             User cos = newUser("cos", passwordEncoder);
+            userRepository.saveAll(Arrays.asList(ssar, cos));
+
             List<Board> boardList = new ArrayList<>();
             for (int i = 1; i < 11; i++) {
                 boardList.add(newBoard("제목"+i, ssar));
@@ -31,7 +33,6 @@ public class WuchangblogApplication extends DummyEntity{
             for (int i = 11; i < 21; i++) {
                 boardList.add(newBoard("제목"+i, cos));
             }
-            userRepository.saveAll(Arrays.asList(ssar, cos));
             boardRepository.saveAll(boardList);
         };
     }

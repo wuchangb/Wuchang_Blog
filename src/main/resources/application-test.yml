@@ -27,10 +27,13 @@ spring:
         format_sql: true
       default_batch_fetch_size: 100 # in query
     open-in-view: false
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
   output:
     ansi:
       enabled: always # vscode console color
 logging:
   level:
-    '[shop.wuchang.wuchangblog]': DEBUG
+    '[shop.mtcoding.thereblog]': DEBUG
     '[org.hibernate.type]': TRACE

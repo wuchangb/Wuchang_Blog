@@ -13,7 +13,7 @@ public class BoardRequest {
 
         public Board toEntity(User user, String thumbnail) {
             return Board.builder()
-                    .user(null)
+                    .user(user)
                     .title(title)
                     .content(content)
                     .thumbnail(thumbnail)

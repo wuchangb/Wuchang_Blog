@@ -13,7 +13,7 @@ public interface BoardRepository extends JpaRepository<Board, Long> {
     Optional<Board> findByIdFetchUser(@Param("id") Long id);
 
     @Query("select distinct b.user.id from Board b")
-    List<Long> findUserIdDistinct();
+    List<Long> findUserIdDistinct(); // 1,2,3
 
     @Query("select b from Board b where b.user.id in :userIds")
     List<Board> findByUserIds(@Param("userIds") List<Long> userIds);

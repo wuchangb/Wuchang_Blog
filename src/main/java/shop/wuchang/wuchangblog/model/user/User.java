@@ -1,5 +1,6 @@
 package shop.wuchang.wuchangblog.model.user;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -17,14 +18,16 @@ public class User {
     private Long id;
     @Column(unique = true, length = 20)
     private String username;
-    @Column(length = 60)    //20자이하만 받을 예정
+    @Column(length = 60) // 20자이하만 받을 예정
     private String password;
     @Column(length = 50)
     private String email;
     private String role; // USER(고객)
-    private String profile; //유저 프로필 사진의 경로
+    private String profile; // 유저 프로필 사진의 경로
     private Boolean status;
+    @JsonIgnore
     private LocalDateTime createdAt;
+    @JsonIgnore
     private LocalDateTime updatedAt;
 
     // 프로필 사진 변경
@@ -32,11 +35,12 @@ public class User {
         this.profile = profile;
     }
 
-    //회원정보 수정
+    // 회원정보 수정
     public void update(String password, String email) {
         this.password = password;
         this.email = email;
     }
+
 
     @PrePersist
     protected void onCreate() {
@@ -47,6 +51,4 @@ public class User {
     protected void onUpdate() {
         this.updatedAt = LocalDateTime.now();
     }
-
-
 }

@@ -16,6 +16,7 @@ import shop.wuchang.wuchangblog.model.user.UserRepository;
 
 import java.util.Optional;
 
+@Transactional(readOnly = true)
 @RequiredArgsConstructor
 @Service
 public class UserService {
@@ -71,5 +72,11 @@ public class UserService {
         if(userOP.isPresent()){
             throw new ExceptionApi400("username", "유저네임이 중복되었어요");
         }
+    }
+
+    public User 회원정보보기(Long id) {
+        User userPS = userRepository.findById(id)
+                .orElseThrow(()->new Exception400("id", "해당 유저가 존재하지 않습니다"));
+        return userPS;
     }
 }

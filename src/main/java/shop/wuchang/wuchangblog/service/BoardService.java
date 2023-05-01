@@ -25,6 +25,7 @@ public class BoardService {
     private final UserRepository userRepository;
     private final BoardQueryRepository boardQueryRepository;
 
+
     @Transactional
     public void 글쓰기(BoardRequest.SaveInDTO saveInDTO, Long userId){
 

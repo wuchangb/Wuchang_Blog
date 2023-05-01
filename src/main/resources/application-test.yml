@@ -37,3 +37,6 @@ logging:
   level:
     '[shop.mtcoding.thereblog]': DEBUG
     '[org.hibernate.type]': TRACE
+
+file:
+  path: home/a

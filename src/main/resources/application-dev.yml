@@ -37,3 +37,6 @@ logging:
   level:
     '[shop.wuchang.wuchangblog]': DEBUG
     '[org.hibernate.type]': TRACE
+
+file:
+  path: c:\a

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.multipart.MultipartFile;
@@ -45,6 +46,21 @@ public class UserController {
         User userPS = userService.회원정보보기(id);
         model.addAttribute("user", userPS);
         return "user/updateForm";
+    }
+
+    @PostMapping("/s/user/{id}/update")
+    public String userUpdate(@PathVariable Long id, @Valid UserRequest.UpdateInDTO updateInDTO,
+                             Errors errors, @AuthenticationPrincipal MyUserDetails myUserDetails) {
+
+        if (id != myUserDetails.getUser().getId()) {
+            throw new Exception403("권한이 없습니다.");
+        }
+
+        User user = userService.회원정보수정(id, updateInDTO);
+
+        myUserDetails.setUser(user);
+        session.setAttribute("sessionUser", user);
+        return "redirect:/";
     }
 
     @GetMapping("/joinForm")

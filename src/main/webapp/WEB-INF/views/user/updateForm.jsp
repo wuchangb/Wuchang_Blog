@@ -4,7 +4,7 @@
 
 <div class="container my-3">
     <div class="container">
-        <form>
+        <form action="/s/user/${user.id}/update" method="post">
             <div class="form-group mb-2">
                 <input type="text" name="username" class="form-control" placeholder="Enter username" value="${user.username}">
             </div>

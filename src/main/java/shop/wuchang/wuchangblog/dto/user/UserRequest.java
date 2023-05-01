@@ -27,4 +27,12 @@ public class UserRequest {
                     .build();
         }
     }
+
+    @Getter @Setter
+    public static class UpdateInDTO {
+        @NotEmpty
+        private String password;
+        @NotEmpty
+        private String email;
+    }
 }

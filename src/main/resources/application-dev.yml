@@ -11,16 +11,10 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   datasource:
-    url: jdbc:h2:mem:test;MODE=MySQL
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-  h2:
-    console:
-      enabled: true
-  jackson:
-    serialization:
-      fail-on-empty-beans: false
+    url: jdbc:mysql://localhost:3306/practice1?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 9520
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create

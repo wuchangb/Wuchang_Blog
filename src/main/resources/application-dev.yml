@@ -11,10 +11,10 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://localhost:3306/practice1?useSSL=false&serverTimezone=UTC
-    username: root
-    password: 9520
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mariadb://${RDS_HOSTNAME}:3306/practice1?allowPublicKeyRetrieval=true&useSSL=false
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create

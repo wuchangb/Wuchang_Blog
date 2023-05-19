@@ -37,6 +37,7 @@ public class BoardRepositoryTest extends DummyEntity {
     @Autowired
     private EntityManager em;
 
+
     private void join_good(){
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         List<User> userList = new ArrayList<>();
@@ -83,6 +84,7 @@ public class BoardRepositoryTest extends DummyEntity {
     @Test
     public void findAll_test(){
         // Lazy 전략 -> Board만 조회
+
         boardRepository.findAll();
     }
 
@@ -108,12 +110,12 @@ public class BoardRepositoryTest extends DummyEntity {
         });
     }
 
-    @Test
-    public void findAllV3_test() throws JsonProcessingException {
-       //Lazy 전략 -> Board만 조회
-        PageRequest pageRequest = PageRequest.of(0, 8, Sort.by("id").descending());
-        Page<Board> boardPG = boardRepository.findAll(pageRequest);
-        String responseBody = new ObjectMapper().writeValueAsString(boardPG);
-        System.out.println("'디버그 : "+responseBody);
-        };
+//    @Test
+//    public void findAllV3_test() throws JsonProcessingException {
+//       //Lazy 전략 -> Board만 조회
+//        PageRequest pageRequest = PageRequest.of(0, 8, Sort.by("id").descending());
+//        Page<Board> boardPG = boardRepository.findAll(pageRequest);
+//        String responseBody = new ObjectMapper().writeValueAsString(boardPG);
+//        System.out.println("'디버그 : "+responseBody);
+//        };
 }

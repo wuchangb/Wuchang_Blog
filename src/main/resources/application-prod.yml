@@ -11,15 +11,18 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   datasource:
-    url: jdbc:mariadb://${rds.hostname}:${rds.port}/${rds.db.name}?allowPublicKeyRetrieval=true&useSSL=false
-    driver-class-name: org.mariadb.jdbc.Driver
-    username: ${rds.username}
-    password: ${rds.password}
+    url: jdbc:h2:mem:test;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
   jpa:
     hibernate:
-      ddl-auto: none  # DB직접 만들어야함
+      ddl-auto: create-drop  # DB직접 만들어야함
       default_batch_fetch_size: 100 # in query
     open-in-view: false
 logging:
   level:
     '[shop.wuchang.wuchangblog]': INFO
+
+file:
+  path: ./upload/

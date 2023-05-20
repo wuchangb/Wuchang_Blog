@@ -23,10 +23,10 @@ public class Board {
 
     private String title;
 
-    @Lob // 4GB
+//    @Lob // 4GB
     private String content;
 
-    @Lob // 4GB
+//    @Lob // 4GB
     private String thumbnail; // content에 등록된 사진중 하나를 선정해서 자동으로 만들기
     @JsonIgnore
     private LocalDateTime createdAt;

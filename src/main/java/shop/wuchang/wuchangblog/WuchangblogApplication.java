@@ -18,7 +18,7 @@ import java.util.List;
 @SpringBootApplication
 public class WuchangblogApplication extends DummyEntity{
 
-    @Profile("dev")
+    @Profile("prod")
     @Bean
     CommandLineRunner init(BCryptPasswordEncoder passwordEncoder, UserRepository userRepository, BoardRepository boardRepository) {
         return args -> {

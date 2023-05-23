@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PROJECT_ROOT="/home/ubuntu/github_action"
-JAR_FILE="$PROJECT_ROOT/wucahngblog-0.0.1-SANPSHOT.war"
+JAR_FILE="$PROJECT_ROOT/wuchangblog-0.0.1-SNAPSHOT.war"
 
 DEPLOY_LOG="$PROJECT_ROOT/deploy.log"
 

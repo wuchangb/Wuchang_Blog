@@ -1,3 +1,72 @@
+# :calendar: 개인 블로그 프로젝트: WUCHANG BLOG
+> 회원가입, 로그인/로그아웃, 글쓰기, 회원정보 수정, 프로필사진 변경 기능의 백엔드 SSR 블로그 프로젝트 입니다.
+
+### 회원가입
+<p align="center">
+<img width="1000" alt="회원가입" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/ff26b59c-1dbb-4bf1-93d6-0f1cfe62e5fc">
+</p>
+<br>
+
+### 로그인
+
+<p align="center">
+<img width="1000" alt="로그인" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/cb89784d-ab6f-4ae0-a771-af6d0cf862a5">
+</p>
+<br>
+
+### 글쓰기
+
+<p align="center">
+<img width="1000" alt="글쓰기" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/b0180db8-f787-4425-b672-b97d12a0faa0">
+</p>
+<br?
+
+### 프로필사진경변경
+
+<p align="center">
+<img width="1000" alt="프로필사진 변경" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/a710b4d5-c265-4576-9efa-1f653919c1f5">
+</p>
+<br>
+
+## :paperclip:개발 기간
+2023.04 ~ 2023.05
+</br>
+</br>
+
+## :computer: 개발 환경
+### Languages and Tools
+- Language : `java 11`
+- Build Tool : `gradle`
+- Framework : `spring-boot 2.7.11`
+- Database : `mariaDB`
+- Storage : `S3`
+- CI/CD : `github action`, `code deploy`, `IAM`
+- Server : `aws EC2`
+
+## 시스템도구성도
+<img width="800" alt="시스템 구성도" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/fe376b63-7412-45ba-bebe-38f539eeaed4">
+</br>
+
+## ERD
+![architecture](https://github.com/MiniTeam-5/MiniProject-BE/assets/12468516/dac870c5-96e5-47c1-9013-7ed3418e27f7)
+</br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 1. 기술스택
 - JDK 11
 - Springboot 2.X 버전

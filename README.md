@@ -1,28 +1,29 @@
-# :calendar: 개인 블로그 프로젝트: WUCHANG BLOG
+# :bust_in_silhouette: 개인 블로그 프로젝트: WUCHANG BLOG
 > 회원가입, 로그인/로그아웃, 글쓰기, 회원정보 수정, 프로필사진 변경 기능의 백엔드 SSR 블로그 프로젝트 입니다.
 
 ### 회원가입
+---
 <p align="center">
 <img width="1000" alt="회원가입" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/ff26b59c-1dbb-4bf1-93d6-0f1cfe62e5fc">
 </p>
 <br>
 
 ### 로그인
-
+---
 <p align="center">
 <img width="1000" alt="로그인" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/cb89784d-ab6f-4ae0-a771-af6d0cf862a5">
 </p>
 <br>
 
 ### 글쓰기
-
+---
 <p align="center">
 <img width="1000" alt="글쓰기" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/b0180db8-f787-4425-b672-b97d12a0faa0">
 </p>
-<br?
+<br>
 
 ### 프로필사진경변경
-
+---
 <p align="center">
 <img width="1000" alt="프로필사진 변경" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/a710b4d5-c265-4576-9efa-1f653919c1f5">
 </p>

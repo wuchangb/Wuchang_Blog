@@ -48,25 +48,6 @@
 <img width="800" alt="시스템 구성도" src="https://github.com/wuchangb/Wuchang_Blog/assets/104978780/fe376b63-7412-45ba-bebe-38f539eeaed4">
 </br>
 
-## ERD
-![architecture](https://github.com/MiniTeam-5/MiniProject-BE/assets/12468516/dac870c5-96e5-47c1-9013-7ed3418e27f7)
-</br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## 1. 기술스택
 - JDK 11
